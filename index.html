@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(50, 42, 82);
+            color: white;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 0px 30px;
+            align-items: center;
+        }
+        .main-text p{
+            text-align: justify;
+            
+        }
+
+        .gb{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            padding: 40px 20px;
+            
+        }
+        .gb p{
+            text-align: justify;
+        }
+        
+        .gb-c{
+            background-color: rgb(50, 42, 82);
+            padding: 20px;
+            line-height: 1.4rem;
+        }
+        .gb-c h2{
+            color: bisque;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .gb p{
+            color: white;
+        }
+        
+        .gb ul li{
+            color: white;
+        }
+        footer{
+            padding: 20px 0px;
+            background-color:rgb(50, 42, 82) ;
+           text-align: center;
+           color: white;
+        }
+
+        @media(max-width:864px){
+            .main{
+                grid-template-columns: 1fr;
+            }
+            .main img{
+                width: 100%;
+            }
+            .gb{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>@M.King</h1>
+        </div>
+        <div class="menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </header>
+     
+    <section class="main">
+        <div class="main-img">
+            <img src="./laptop.png" alt="">
+        </div>
+        <div class="main-text">
+            <h2>Acer Predator 21X </h2>
+            <p><strong>This is the biggest, most powerful, and most expensive gaming laptop ever made</strong> Acer has made the most of the enormous size of the 21 X, cramming what feels like every inch of it with some serious firepower. Like the external design, the 21 X's spec sheet feels built for sheer overkill. A Core i7 Skylake Intel processor that’s overclocked up to 4.1 GHz. Two SLI linked GTX 1080 GPUs, with a total of 16GB of dedicated onboard VRAM.</p>
+        </div>
+    </section>
+
+    <section class="gb">
+        <div class="About-battery gb-c">
+            <h2>ABOUT BATTERY</h2>
+           <p>Battery life is a disappointment with the 21 X, even compared to the lowered expectations for gaming laptops. The Predator lasted just an hour and 51 minutes on the Verge Battery Test, which cycles a series of web pages through Google Chrome.</p>
+        </div>
+        <div class="god gb-c">
+            <h2>The GOOD</h2>
+        <ul>
+            <li>Incredible gaming experience</li>
+            <li>Curved screen is super immersive</li>
+            <li>Great performance</li>
+        </ul>
+        </div>
+        <div class="bad gb-c">
+            <h2>The BAD</h2>
+            <ul>
+                <li>Barely portable</li>
+                <li>Ludicrously expensive</li>
+                <li>Battery life is terrible</li>
+                <li>It’s not great at anything that’s not gaming</li>
+            </ul>
+        </div>
+        
+    </section>
+    <footer>
+        <p>Copyright &copy 2024 @thapa-mahendra</p>
+    </footer>
+</body>
+</html>
